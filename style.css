@@ -1,0 +1,262 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Banner header */
+header.wel {
+    position: relative;
+    background: url('Vegetable Banner Ima.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 80px 20px 100px;
+}
+
+/* Overlay */
+.wel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Navbar layout */
+.navbar {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Brand name */
+.brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #00ccff;
+    letter-spacing: 1px;
+}
+
+.brand a {
+    color: #00ccff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.brand a:hover {
+    color: #00ffff;
+}
+
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00ffee;
+}
+
+/* Welcome heading */
+header.wel h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 60px auto 0;
+    padding: 10px 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    max-width: 90%;
+}
+
+/* Main content */
+main {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* Welcome subtitle */
+.wel2 {
+    font-size: 26px;
+    margin: 40px 0 20px;
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.wel :hover {
+    color:#00d9ff;
+}
+
+.wel2:hover {
+    color: #00ffff;
+}
+
+/* Intro animation */
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro {
+    animation: fadeSlideUp 1s ease-out forwards;
+    opacity: 0;
+    padding: 20px 30px;
+    margin: 20px auto 60px;
+    max-width: 700px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: color 0.3s ease;
+}
+
+.intro:hover {
+    color: #00ffff;
+}
+
+/* Product section */
+.productli {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f0faff;
+    border: 2px solid #4d9ff7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productli:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 229, 255, 0.2);
+}
+
+.productli h3 {
+    color: #333;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.productli a {
+    color: #4d9ff7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.productli a:hover {
+    color: rgb(13, 0, 255);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 16px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0 -2px 6px rgba(255, 255, 255, 0.1);
+    z-index: 999;
+}
+
+.own a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.own a:hover {
+    color: rgb(0, 195, 255);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .brand {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    header.wel h1 {
+        font-size: 24px;
+    }
+
+    .wel2,
+    .intro p,
+    .productli h3 {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+        header.wel h1 {
+        font-size: 28px;
+        margin: 40px auto 0;
+        text-align: center;
+    }
+
+}
